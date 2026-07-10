@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "arxivsub": {
+      "command": "npx",
+      "args": ["-y", "arxivsub-mcp"],
+      "env": {
+        "ARXIVSUB_SKILL_KEY": ""
+      }
+    }
+  }
+}
