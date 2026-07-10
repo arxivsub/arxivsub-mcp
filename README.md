@@ -36,6 +36,21 @@ The server runs via `npx` — no manual install needed. Add it to your MCP clien
 claude mcp add arxivsub --env ARXIVSUB_SKILL_KEY=your_key_here -- npx -y arxivsub-mcp
 ```
 
+**Codex CLI:**
+
+```bash
+codex mcp add arxivsub --env ARXIVSUB_SKILL_KEY=your_key_here -- npx -y arxivsub-mcp
+```
+
+Or add it to `~/.codex/config.toml` directly:
+
+```toml
+[mcp_servers.arxivsub]
+command = "npx"
+args = ["-y", "arxivsub-mcp"]
+env = { ARXIVSUB_SKILL_KEY = "your_key_here" }
+```
+
 Restart your client and the tools below become available.
 
 ## Tools
