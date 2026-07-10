@@ -1,0 +1,56 @@
+{
+  "name": "arxivsub-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for arXivSub — search arXiv and top AI / CV / ML / robotics / NLP conference papers, follow a paper to its related work, build research analytics, and manage a personal library, straight from your AI agent.",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "arxiv",
+    "research",
+    "papers",
+    "academic",
+    "literature-review",
+    "conferences",
+    "llm",
+    "claude",
+    "cursor",
+    "ai-agent"
+  ],
+  "homepage": "https://arxivsub.comfyai.app",
+  "bugs": {
+    "url": "https://github.com/arxivsub/arxivsub-mcp/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arxivsub/arxivsub-mcp.git"
+  },
+  "license": "MIT",
+  "author": "arXivSub",
+  "type": "module",
+  "bin": {
+    "arxivsub-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
+    "start": "node dist/index.js",
+    "test": "npm run build && node parse.test.mjs && node smoke.mjs",
+    "probe": "node probe.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "typescript": "^5.5.0"
+  }
+}
