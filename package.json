@@ -1,6 +1,7 @@
 {
   "name": "arxivsub-mcp",
-  "version": "0.1.0",
+  "version": "0.1.1",
+  "mcpName": "io.github.arxivsub/arxivsub-mcp",
   "description": "MCP server for arXivSub — search arXiv and top AI / CV / ML / robotics / NLP conference papers, follow a paper to its related work, build research analytics, and manage a personal library, straight from your AI agent.",
   "keywords": [
     "mcp",

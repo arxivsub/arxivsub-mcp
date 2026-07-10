@@ -237,7 +237,7 @@ function errorResult(e: unknown): ToolResult {
 // ---------------------------------------------------------------------------
 // Server + tools
 // ---------------------------------------------------------------------------
-const server = new McpServer({ name: "arxivsub", version: "0.1.0" });
+const server = new McpServer({ name: "arxivsub", version: "0.1.1" });
 
 const VENUES =
   "arxiv, CVPR, ICCV, ECCV, ICLR, ICML, NeurIPS, AAAI, MICCAI, CoRL, RSS, ACL, EMNLP, ICRA, IROS, IJCAI, SIGGRAPH, 'SIGGRAPH Asia'";
