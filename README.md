@@ -53,6 +53,22 @@ env = { ARXIVSUB_SKILL_KEY = "your_key_here" }
 
 Restart your client and the tools below become available.
 
+## claude.ai (remote connector)
+
+On [claude.ai](https://claude.ai) there's nothing to install, add a hosted connector:
+
+1. **Settings → Connectors → Add custom connector**
+2. **Name**: `arxivsub`
+3. **Remote MCP server URL** (replace `YOUR_KEY` with your key from https://arxivsub.comfyai.app/skills):
+
+   ```
+   https://qtevnmgyobilaanrzidq.supabase.co/functions/v1/mcp?key=YOUR_KEY
+   ```
+
+4. Leave the OAuth fields empty and click **Add**.
+
+This is a hosted [Streamable HTTP](https://modelcontextprotocol.io) MCP endpoint, a thin adapter over the arXivSub gateway exposing the same tools. Source: [`supabase/functions/mcp/index.ts`](supabase/functions/mcp/index.ts).
+
 ## Tools
 
 | Tool | What it does |
